@@ -121,6 +121,18 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+.QueH1Color {
+  color: #000;
+  text-shadow:1px 3px yellow;	
+  font-size: 4em;
+  text-align:center;
+  padding-bottom: 20px;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, Helvetica , "Bitstream Vera Sans Bold", "Arial Black", sans-serif; 
+}
+.Copyright {
+  margin-top: 50px;
+}
+
 
 /*---------------------------------------
   SECTION               
