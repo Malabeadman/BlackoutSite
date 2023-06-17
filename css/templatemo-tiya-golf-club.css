@@ -448,8 +448,6 @@ strong {
 .navbar {
   background: transparent;
   z-index: 99;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .navbar-brand,
