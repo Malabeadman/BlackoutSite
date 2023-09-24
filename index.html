@@ -294,7 +294,7 @@ Queblackout
                     <div class="row">
                         
                         <div class="col-lg-5 col-12">
-                            <form action="#" method="post" class="custom-form contact-form" role="form">
+                            <form action="#" method="post" class="custom-form contact-form" role="form" style="padding: 20px;">
                                 <h2 class="mb-4 pb-2">Contact Us</h2>
 
                                 <div class="row">
@@ -327,29 +327,16 @@ Queblackout
                             </form>
                         </div>
 
-                        <div>
-                            <div id="map"></div>
-                            <div id="pano"></div>
+                       
+                        <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+                        <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+                        <style>
+                        /* body { margin: 0; padding: 0; }*/
+                        #map { position: relative; height: 500px; width: 600px;}
+                        </style>
+                        </head>
+                        <div id="map"></div>
                         
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="contact-info mt-5">
-                                <div class="contact-info-item">
-                                    <div class="contact-info-body">
-                                        <strong>Detroit, United States</strong>
-
-                                        <p class="mb-0">
-                                            <a href="mailto:deangelo.lee19@gmail.com" class="contact-link">
-                                                https://queblackout.org
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <img src="images/WorldMap.svg" class="img-fluid" alt="">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -400,6 +387,19 @@ Queblackout
         <script src="js/custom.js"></script>
         <script src="https://kit.fontawesome.com/650093c869.js" crossorigin="anonymous"></script>
 
+        <script>
+            // TO MAKE THE MAP APPEAR YOU MUST
+            // ADD YOUR ACCESS TOKEN FROM
+            // https://account.mapbox.com
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZG1hcHMxOCIsImEiOiJjbG13dTVtaWMwdjgyMnFtb2IycDJ1bGQ1In0.3LtUTHxXE8RpY9vtAo8yTQ';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-83.022410, 42.395180], // starting position [lng, lat]
+        zoom: 15 // starting zoom
+        });
+        </script>
 
     </body>
 </html>

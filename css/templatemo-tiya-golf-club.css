@@ -1290,6 +1290,7 @@ strong {
   }
 }
 
+
 @media screen and (max-width: 360px) {
   .custom-btn {
     font-size: 12px;
