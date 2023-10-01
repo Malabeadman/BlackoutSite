@@ -337,6 +337,19 @@ Queblackout
                         <style>
                         /* body { margin: 0; padding: 0; }*/
                         #map { position: relative; height: 500px; width: 600px;}
+                        #marker {
+                            background-color: ghostwhite;
+                            background-image: url("images/queblackoutlFavicon.png");
+                            background-size: cover;
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            }
+                             
+                        .mapboxgl-popup {
+                        max-width: 200px;
+                        }
                         </style>
                         </head>
                         <div id="map"></div>
@@ -392,17 +405,33 @@ Queblackout
         <script src="https://kit.fontawesome.com/650093c869.js" crossorigin="anonymous"></script>
 
         <script>
-            // TO MAKE THE MAP APPEAR YOU MUST
-            // ADD YOUR ACCESS TOKEN FROM
-            // https://account.mapbox.com
             mapboxgl.accessToken = 'pk.eyJ1IjoiZG1hcHMxOCIsImEiOiJjbG13dTVtaWMwdjgyMnFtb2IycDJ1bGQ1In0.3LtUTHxXE8RpY9vtAo8yTQ';
         const map = new mapboxgl.Map({
         container: 'map', // container ID
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
         center: [-83.022410, 42.395180], // starting position [lng, lat]
-        zoom: 15 // starting zoom
+        zoom: 13.6 // starting zoom
         });
+
+
+        
+
+        //create popup
+        const popup = new mapboxgl.Popup({ offset: 25}).setText(
+            'Queblackout'
+            
+        );
+
+        // create DOM element for the marker
+        const el = document.createElement('div');
+        el.id = 'marker';
+
+        var marker = new mapboxgl.Marker(el)
+        .setLngLat([-83.022410, 42.395180]) // Location of the marker
+        .setPopup(popup)
+        .addTo(map);
+
         </script>
 
     </body>
