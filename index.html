@@ -300,114 +300,128 @@ Queblackout
             </section>
 
 <!-- /////////////////////////////////// Contact Section ////////////////////////   -->
-            <section class="contact-section section-bg section-padding" id="section_5">
-                <h3 class="mb-3 text-center" style="color: white;">Connect with Que Blackout!</h3>
-                <div style="height: 15px"></div>
-                <div class="container">
+<section class="contact-section section-bg section-padding" id="section_5">
+    <div class="container">
+        <div class="row" style="justify-content: center;">
+            
+            <div class="col-lg-5 col-12" style="padding-bottom: 25px;">
+                <div>
+                    <link rel="stylesheet"
+                    href="https://cdn.eztexting.com/assets/signup-forms/signup-forms-styles.min.css"
+                    type="text/css">
+                    <form class="c-web-form" ngNoForm method="POST"
+                    action="https://widgy-lb.prd.cfire.io/EZ/widget/subscribe" onsubmit="return false;">
+                    <input type="hidden" name="serializedData" id="jwt"
+                    value="eyJlbmMiOiJBMTI4R0NNIiwiYnJhbmQiOiJFWiIsImFsZyI6ImRpciIsIndpZGdldElkIjoiZWU
+                    3ZDEwZjMtMzUwOC00YjMyLTk4ZDAtZGIzMWYxOTQ4OWJmIn0..W4t2fVkF1nQ_GUgd.4oqjd
+                    96n0lOeJLadFzJdzN9tj53foB6BJJfcDyCATLSfQSYvfOcZvymjbsQklcITP5Hq1AOMFZEl_1Jk3y_
+                    5t7KdjS6N8ejeqiSMoBs6GebyPhWWj9WWvQ2U6MEE1g5gvu1Ut1oMcU3ZIplsCvlSIK3omYvC
+                    ZFYxz97oozUH3pmUDPV2waVZJAS78UsR40KpTSwM_9kiOJF9Ge5X2AsV-fqqJf_9N5Il5TThc
+                    Jf0eBzlWA.aG0whtoyHa7KMtRPlpUYNw">
+                    <div class="c-web-form__title">Connect with Que Blackout!</div>
+                    <div class="c-web-form__description">Stay informed - sign up now!</div>
+                    <ul class="c-web-form__be-errors"></ul>
                     <div>
-                        <link rel="stylesheet" href="https://cdn.eztexting.com/assets/signup-forms/signup-forms-styles.min.css" type="text/css">
-                        <form class="c-web-form" ngNoForm method="POST" action="https://widgy-lb.prd.cfire.io/EZ/widget/subscribe" onsubmit="return false;">
-                        <input type="hidden" name="serializedData" id="jwt" value="eyJlbmMiOiJBMTI4R0NNIiwiYnJhbmQiOiJFWiIsImFsZyI6ImRpciIsIndpZGdldElkIjoiZWU
-                        3ZDEwZjMtMzUwOC00YjMyLTk4ZDAtZGIzMWYxOTQ4OWJmIn0..W4t2fVkF1nQ_GUgd.4oqjd
-                        96n0lOeJLadFzJdzN9tj53foB6BJJfcDyCATLSfQSYvfOcZvymjbsQklcITP5Hq1AOMFZEl_1Jk3y_
-                        5t7KdjS6N8ejeqiSMoBs6GebyPhWWj9WWvQ2U6MEE1g5gvu1Ut1oMcU3ZIplsCvlSIK3omYvC
-                        ZFYxz97oozUH3pmUDPV2waVZJAS78UsR40KpTSwM_9kiOJF9Ge5X2AsV-fqqJf_9N5Il5TThc
-                        Jf0eBzlWA.aG0whtoyHa7KMtRPlpUYNw">
-                        <div class="c-web-form__description">Stay informed - sign up now!</div>
-                            <ul class="c-web-form__be-errors"></ul>
-                        <div>
-                        <div class="c-web-form__control-group">
-                            <label class="c-web-form__label c-web-form-uppercase-text" for="c-web-form-phoneNumber">Phone Number*</label>
-                            <div class="c-web-form__error" id="c-web-form-phoneNumber-error"></div>
-                            <input value="" class="c-web-form__input" type="tel" name="phoneNumber" id="c-web-form-phoneNumber" maxlength="20">
-                            </div>
-                            </div>
-                        <div>
-                        <div class="c-web-form__control-group">
-                        <label class="c-web-form__label c-web-form-uppercase-text"
-                        for="c-web-form-firstName">First Name</label>
-                        <div class="c-web-form__error"></div>
-                        <input value="" class="c-web-form__input c-web-form-text-validate" type="text"
-                        name="firstName" id="c-web-form-firstName" maxlength="20">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="c-web-form__control-group">
-                        <label class="c-web-form__label c-web-form-uppercase-text"
-                        for="c-web-form-lastName">Last Name</label>
-                        <div class="c-web-form__error"></div>
-                        <input value="" class="c-web-form__input c-web-form-text-validate" type="text"
-                        name="lastName" id="c-web-form-lastName" maxlength="20">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="c-web-form__control-group">
-                        <label class="c-web-form__label c-web-form-uppercase-text"
-                        for="c-web-form-email">Email Address</label>
-                        <div class="c-web-form__error" id="c-web-form-email-error"></div>
-                        <input value="" class="c-web-form__input" type="email" name="email" maxlength="100"
-                        placeholder="email@example.com" id="c-web-form-email">
-                        </div>
-                        </div>
-                        <div class="c-web-form__control-group">
-                        <input class="c-web-form__checkbox" type="checkbox" id="c-web-form-agree"
-                        onchange="document.querySelector('.c-web-form__submit').toggleAttribute('disabled',
-                        !this.checked)">
-                        <label class="c-web-form__label" for="c-web-form-agree">
-                        By checking this box, you agree to receive text messages from Que Blackout.
-                        Recurring messages subscription. Message and data rates may apply.
-                        Reply HELP for help and STOP to opt out.
-                        </label>
-                        </div>
-                        <div class="c-web-form__control-group">
-                        <button type="submit" class="c-web-form__submit" disabled>Sign Up</button>
-                        </div>
-                        <p class="c-success-message">Thank you for submitting </p>
-                        <div class="c-web-form__footer">
-                        SMS sharing disclosure: No mobile information will be shared with third parties/affiliates for
-                        marketing/promotional purposes at anytime.
-                        <br><br>
-                        <i>Powered by <span class="c-web-form-semibold-text">EZ Texting</span></i>
-                        </div>
-                        </form>
-                        <script type="text/javascript"
-                        src="https://cdn.eztexting.com/assets/signup-forms/signup-forms-validation.min.js"></script>
-                        </div>
-
-
-                       <!--
-
-                                                        <div style="padding-top: 70px;">
-                                    <p style="color: white;"> Uncover us at 9016 Van Dyke, Detroit, MI 48213.</p>
-                                 </div>
-
-                        <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
-                        <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
-                        <style>
-                        /* body { margin: 0; padding: 0; }*/
-                        #map { position: relative; height: 500px; width: 600px;}
-                        #marker {
-                            background-color: ghostwhite;
-                            background-image: url("images/queblackoutlFavicon.png");
-                            background-size: cover;
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            cursor: pointer;
-                            }
-                             
-                        .mapboxgl-popup {
-                        max-width: 200px;
-                        }
-                        </style>
-                        </head>
-                        <div id="map"></div>
-                                               -->
-
+                    <div class="c-web-form__control-group">
+                    <label class="c-web-form__label c-web-form-uppercase-text"
+                    for="c-web-form-phoneNumber">Phone Number*</label>
+                    <div class="c-web-form__error" id="c-web-form-phoneNumber-error"></div>
+                    <input value="" class="c-web-form__input" type="tel" name="phoneNumber"
+                    id="c-web-form-phoneNumber" maxlength="20">
                     </div>
+                    </div>
+                    <div>
+                    <div class="c-web-form__control-group">
+                    <label class="c-web-form__label c-web-form-uppercase-text"
+                    for="c-web-form-firstName">First Name</label>
+                    <div class="c-web-form__error"></div>
+                    <input value="" class="c-web-form__input c-web-form-text-validate" type="text"
+                    name="firstName" id="c-web-form-firstName" maxlength="20">
+                    </div>
+                    </div>
+                    <div>
+                    <div class="c-web-form__control-group">
+                    <label class="c-web-form__label c-web-form-uppercase-text"
+                    for="c-web-form-lastName">Last Name</label>
+                    <div class="c-web-form__error"></div>
+                    <input value="" class="c-web-form__input c-web-form-text-validate" type="text"
+                    name="lastName" id="c-web-form-lastName" maxlength="20">
+                    </div>
+                    </div>
+                    <div>
+                    <div class="c-web-form__control-group">
+                    <label class="c-web-form__label c-web-form-uppercase-text"
+                    for="c-web-form-email">Email Address</label>
+                    <div class="c-web-form__error" id="c-web-form-email-error"></div>
+                    <input value="" class="c-web-form__input" type="email" name="email" maxlength="100"
+                    placeholder="email@example.com" id="c-web-form-email">
+                    </div>
+                    </div>
+                    <div class="c-web-form__control-group">
+                    <input class="c-web-form__checkbox" type="checkbox" id="c-web-form-agree"
+                    onchange="document.querySelector('.c-web-form__submit').toggleAttribute('disabled',
+                    !this.checked)">
+                    <label class="c-web-form__label" for="c-web-form-agree">
+                    By checking this box, you agree to receive text messages from Que Blackout.
+                    Recurring messages subscription. Message and data rates may apply.
+                    Reply HELP for help and STOP to opt out.
+                    </label>
+                    </div>
+                    <div class="c-web-form__control-group">
+                    <button type="submit" class="c-web-form__submit" disabled>Sign Up</button>
+                    </div>
+                    <p class="c-success-message">Thank you for submitting </p>
+                    <div class="c-web-form__footer">
+                    SMS sharing disclosure: No mobile information will be shared with third parties/affiliates for
+                    marketing/promotional purposes at anytime.
+                    <br><br>
+                    <i>Powered by <span class="c-web-form-semibold-text">EZ Texting</span></i>
+                    </div>
+                    </form>
+                    <script type="text/javascript"
+                    src="https://cdn.eztexting.com/assets/signup-forms/signup-forms-validation.min.js"></script>
+                    </div>
+
+            </div>
+
+           <!--
+
+
+           -->
+           <div class="col-4 " style="padding-bottom: 25px; width: fit-content; ">
+            <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+            <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+            <style>
+            /* body { margin: 0; padding: 0; }*/
+            #map { position: relative; height: 500px; width: 600px;}
+            #marker {
+                background-color: ghostwhite;
+                background-image: url("images/queblackoutlFavicon.png");
+                background-size: cover;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                cursor: pointer;
+                }
+                 
+            .mapboxgl-popup {
+            max-width: 200px;
+            }
+            </style>
+            </head>
+            
+            <div id="map"></div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6" style="text-align: center;padding-top: 2em; color: white; font-size: large;">
+                    <div class="demo-content">Uncover us at 9016 Van Dyke, Detroit, MI 48213.</div>
                 </div>
-            </section>
-        </main>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+</main>
 
         <footer class="site-footer">
             <div class="container">
@@ -418,9 +432,9 @@ Queblackout
                             <img src="images/QueblackoutLogo.png" class="navbar-brand-image img-fluid" alt="">
                         </a>
                     </div>
-
-                    <div class="col-lg-3" style=" padding-top: 50px;" id="Copyright">
+                    <div class="col-lg-3" style=" padding-top: 50px; text-align: center;" id="Copyright">
                         <p >Copyright © 2023 Queblackout</p>
+                        <a style="font-size: large;" href="https://eztxt.net/nO0rU4">Subscribe To Our Newsletter</a>
                     </div>
                         <div class="col-lg-2 col-12 ms-auto">
                             <ul class="social-icon mt-lg-5 mt-3 mb-4">
